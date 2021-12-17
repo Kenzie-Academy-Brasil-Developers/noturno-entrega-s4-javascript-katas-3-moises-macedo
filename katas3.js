@@ -3,7 +3,7 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 39
 function showResults(result){
        
     const novoParagrafo = document.createElement("p");
-    const texto = document.createTextNode("Resultado do Kata é " +  result);
+    const texto = document.createTextNode("Resultado do Kata é " +  result );
     novoParagrafo.appendChild(texto);
     const div = document.querySelector("div");
     div.appendChild(novoParagrafo)
@@ -206,8 +206,9 @@ function kata9() {
         if (contador  % 5 ===0) {
             i.push(contador)
             
+            
         }
-   
+           
     
   }
   showResults(i, "kata9")
@@ -216,24 +217,97 @@ kata9()
 
 function kata10() {
     // implemente o código do kata 10 aqui
+    const novoParagrafo = document.createElement("p");
+
+    let i = [];
+
+    for(let contador = 0; contador <sampleArray.length; contador++){
+
+        i.push(sampleArray[contador])
+    }
+    
+        
+    showResults(i, "kata10")     
+    
+
 }
+kata10()
 
 function kata11() {
     // implemente o código do kata 11 aqui
+    const novoParagrafo = document.createElement("p");
+
+    let i = []
+
+
+    for(let contador=0; contador<sampleArray.length; contador++)            
+               
+            {
+                if (sampleArray[contador] % 2 == 0)
+        
+                {i.push(sampleArray[contador]) }
+        
+            }
+  
+    showResults(i, "kata11")
 }
+kata11()
 
 function kata12() {
     // implemente o código do kata 12 aqui
+    const novoParagrafo = document.createElement("p");
+
+    let i = [];
+
+    for(let contador=0; contador<sampleArray.length; contador++)            
+               
+            {
+                if (sampleArray[contador] % 2 !== 0)
+        
+                {i.push(sampleArray[contador]) }
+        
+            }
+    
+        
+    showResults(i, "kata12") 
+    
 }
+kata12()
 
 function kata13() {
     // implemente o código do kata 13 aqui
+    const novoParagrafo = document.createElement("p");
+
+    let i = [];
+
+    for(let contador=0; contador<sampleArray.length; contador++)            
+               
+            {
+                if (sampleArray[contador] % 8 == 0)
+        
+                {i.push(sampleArray[contador]) }
+        
+            }
+    
+        
+    showResults(i, "kata13") 
 }
+kata13()
 
 function kata14() {
     // implemente o código do kata 14 aqui
-}
+    const resultado = document.createElement('p')
 
+    let i = [];
+
+    for(let contador=0; contador<sampleArray.length; contador++)
+
+            {i.push((sampleArray[contador])*(sampleArray[contador]))}
+    
+         
+    showResults(i, "kata14") 
+}
+kata14()
 function kata15() {
     // implemente o código do kata 15 aqui
 }
