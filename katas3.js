@@ -173,7 +173,7 @@ function kata9() {
     showResults(i,'kata9')
     
 }
-kata9()
+
 const botaoKata9 = document.getElementById('kata9');
 botaoKata9.addEventListener('click', kata9)
 
