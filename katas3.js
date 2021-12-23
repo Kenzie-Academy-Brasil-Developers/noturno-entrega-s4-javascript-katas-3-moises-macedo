@@ -196,7 +196,6 @@ function kata11() {
     // implemente o código do kata 11 aqui
     let i = []
 
-
     for(let contador=0; contador<sampleArray.length; contador++)            
                
             {
@@ -208,7 +207,6 @@ function kata11() {
   
     showResults(i, "kata11")
     
-
 }
 const botaoKata11 = document.getElementById('kata11');
 botaoKata11.addEventListener('click', kata11)
